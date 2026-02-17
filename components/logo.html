@@ -1,0 +1,68 @@
+<div class="foodguid-logo" aria-label="FoodGuid">
+  <svg class="fg-mark" viewBox="0 0 220 220" role="img" aria-hidden="true">
+    <defs>
+      <linearGradient id="fgPin" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="var(--fg-green-1)" />
+        <stop offset="100%" stop-color="var(--fg-green-2)" />
+      </linearGradient>
+
+      <filter id="fgShadow" x="-50%" y="-50%" width="200%" height="200%">
+        <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000" flood-opacity="0.18" />
+      </filter>
+    </defs>
+
+    <ellipse class="fg-shadow" cx="110" cy="190" rx="52" ry="14" />
+
+    <g class="fg-pin" filter="url(#fgShadow)">
+      <path
+        d="M110 18
+           C66 18 30 54 30 98
+           C30 141 68 164 96 198
+           C103 206 107 212 110 218
+           C113 212 117 206 124 198
+           C152 164 190 141 190 98
+           C190 54 154 18 110 18 Z"
+        fill="url(#fgPin)"
+      />
+
+      <path
+  class="fg-fork"
+  d="M78 58
+     C78 52 82 48 88 48
+     C92 48 96 51 96 56
+     L96 74
+     C96 76 98 78 100 78
+     C102 78 104 76 104 74
+     L104 56
+     C104 51 108 48 112 48
+     C118 48 122 52 122 58
+     L122 82
+     C122 92 116 100 108 104
+     L108 136
+     C108 142 103 146 96 146
+     C89 146 84 142 84 136
+     L84 104
+     C76 100 70 92 70 82
+     L70 58
+     C70 52 74 48 80 48
+     C84 48 88 51 88 56
+     L88 74
+     C88 76 90 78 92 78
+     C94 78 96 76 96 74
+     Z"
+  fill="var(--fg-bg)"
+  opacity="0.98"
+  transform="translate(14 18) scale(0.85)"
+/>
+
+    </g>
+
+    <circle class="fg-dot d1" cx="175" cy="36" r="6" />
+    <circle class="fg-dot d2" cx="192" cy="26" r="4.8" />
+    <circle class="fg-dot d3" cx="206" cy="18" r="3.8" />
+  </svg>
+
+  <div class="fg-word">
+    <span class="fg-food">FOOD</span><span class="fg-guid">GUID</span>
+  </div>
+</div>
