@@ -7,3 +7,25 @@
     font-family: "Poppins";
     src: url(../../font/Poppins-Medium.ttf);
   }
+
+:root {
+  --food-color: #0f5f5a;   /* FOOD */
+  --guid-color: #f9a21b;   /* GUID */
+}
+
+  *{
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+  
+    ul, ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+

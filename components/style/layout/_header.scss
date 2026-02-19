@@ -1,0 +1,60 @@
+@keyframes pulse {
+  0%, 100% {
+    transform: translateY(-0.1em) scale(1);
+    opacity: 0.2;
+  }
+
+  50% {
+    transform:  translateY(-0.1em) scale(1.2);
+    opacity: 1;
+  }
+}
+
+header {
+  .header-CTA {
+    background: url(/components/img/header4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+            #title {
+                font-family: "Montserrat", "Poppins", sans-serif;
+                font-weight: 800;
+                font-size: 4rem;
+                letter-spacing: 0.05rem;
+                padding: 20px;
+                background-color: rgba(240, 255, 255, 0.411);
+
+                #food {
+                    color: var(--food-color);
+                }
+
+                #guid {
+                    color: var(--guid-color);
+                }
+
+                #dot {
+                    display: inline-block;
+                    width: 0.85rem;
+                    height: 0.82rem;
+                    margin-left: 0.02em; // collé au D
+                    background-color: var(--guid-color);
+                    border-radius: 50%;
+
+                    opacity: 0;
+                    
+                    transform: translateY(0.38em);
+
+                    animation: pulse 1.4s ease-in-out infinite;
+                    animation-play-state: paused;
+
+                    &.show {
+                        opacity: 1;
+                        animation-play-state: running;
+                    }
+                }
+            }
+        }
+}
+
