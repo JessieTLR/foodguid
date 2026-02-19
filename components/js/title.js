@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const food = "FOOD";
-  const guid = "GUID";
+  const guid = "GUID.";
 
   const foodEl = document.getElementById("food");
   const guidEl = document.getElementById("guid");
