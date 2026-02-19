@@ -23,16 +23,6 @@ body ul, body ol {
   padding: 0;
 }
 
-@keyframes pulse {
-  0%, 100% {
-    transform: translateY(-0.1em) scale(1);
-    opacity: 0.2;
-  }
-  50% {
-    transform: translateY(-0.1em) scale(1.2);
-    opacity: 1;
-  }
-}
 header .header-CTA {
   background: url(/components/img/header4.jpg);
   background-position: center;
@@ -47,6 +37,7 @@ header .header-CTA #title {
   letter-spacing: 0.05rem;
   padding: 20px;
   background-color: rgba(240, 255, 255, 0.411);
+  display: flex;
 }
 header .header-CTA #title #food {
   color: var(--food-color);
@@ -54,19 +45,16 @@ header .header-CTA #title #food {
 header .header-CTA #title #guid {
   color: var(--guid-color);
 }
-header .header-CTA #title #dot {
-  display: inline-block;
-  width: 0.85rem;
-  height: 0.82rem;
-  margin-left: 0.02em;
-  background-color: var(--guid-color);
-  border-radius: 50%;
-  opacity: 0;
-  transform: translateY(0.38em);
-  animation: pulse 1.4s ease-in-out infinite;
-  animation-play-state: paused;
+header .header-CTA #title #mark {
+  margin-left: 0.1em;
 }
-header .header-CTA #title #dot.show {
+header .header-CTA #title #mark img {
+  width: 1.2em;
+  opacity: 0;
+  transform: translateY(0.07em) scale(0.9);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+header .header-CTA #title #mark.show img {
   opacity: 1;
-  animation-play-state: running;
+  transform: translateY(0.07em) scale(1);
 }/*# sourceMappingURL=style.css.map */

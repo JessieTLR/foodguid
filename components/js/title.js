@@ -15,8 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (i - food.length < guid.length) {
       guidEl.textContent += guid[i - food.length];
     } else {
-      // texte terminé -> on affiche le point et on arrête
-      dotEl.classList.add("show");
+      document.getElementById("mark").classList.add("show");
       return;
     }
 
