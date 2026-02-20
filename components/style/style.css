@@ -108,6 +108,36 @@ header .tampon-ville {
   margin: 0;
   max-width: 52ch;
 }
+.top-main .left-top-main .badge {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  background: rgba(0, 0, 0, 0.06);
+  margin-bottom: 14px;
+}
+.top-main .left-top-main .cta {
+  margin-top: 22px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.top-main .left-top-main .cta .btn {
+  padding: 12px 16px;
+  border-radius: 14px;
+  background: var(--guid-color);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+.top-main .left-top-main .cta .link {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--guid-color);
+  opacity: 0.85;
+}
 .top-main .right-top-main {
   position: relative;
   display: flex;
@@ -115,10 +145,52 @@ header .tampon-ville {
   align-items: center;
 }
 .top-main .right-top-main img {
+  display: block;
+}
+.top-main .right-top-main > img:first-child {
   width: min(650px, 100%);
   height: auto;
-  display: block;
-  filter: drop-shadow(0 14px 35px rgba(0, 0, 0, 0.15));
+}
+.top-main .right-top-main .pin {
+  position: absolute;
+  width: 54px;
+  height: auto;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: drop 900ms cubic-bezier(0.2, 0.9, 0.2, 1) forwards;
+  animation-fill-mode: forwards;
+  filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.25));
+}
+.top-main .right-top-main .pin-1 {
+  left: 32%;
+  top: 38%;
+  animation-delay: 0.2s;
+}
+.top-main .right-top-main .pin-2 {
+  left: 55%;
+  top: 52%;
+  animation-delay: 0.55s;
+}
+.top-main .right-top-main .pin-3 {
+  left: 72%;
+  top: 30%;
+  animation-delay: 0.9s;
+}
+@keyframes drop {
+  0% {
+    transform: translate(-50%, -140px) scale(0.9);
+    opacity: 0;
+  }
+  60% {
+    transform: translate(-50%, -50%) scale(1.05);
+    opacity: 1;
+  }
+  80% {
+    transform: translate(-50%, -60%) scale(0.98);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 @media (max-width: 900px) {
   .top-main {

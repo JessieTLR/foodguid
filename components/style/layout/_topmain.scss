@@ -37,6 +37,39 @@
       margin: 0;
       max-width: 52ch;
     }
+    .badge{
+        display: inline-block;
+        padding: 8px 12px;
+        border-radius: 999px;
+        font-family: "Poppins", sans-serif;
+        font-size: .9rem;
+        background: rgba(0,0,0,.06);
+        margin-bottom: 14px;
+    }
+
+    .cta{
+        margin-top: 22px;
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .btn{
+            padding: 12px 16px;
+            border-radius: 14px;
+            background: var(--guid-color);
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .link{
+            text-decoration: none;
+            font-weight: 600;
+            color: var(--guid-color);
+            opacity: .85;
+        }
+    }
   }
 
   .right-top-main {
@@ -45,13 +78,43 @@
     justify-content: center;
     align-items: center;
 
-    img {
-      width: min(650px, 100%);
-      height: auto;
-      display: block;
-      filter: drop-shadow(0 14px 35px rgba(0,0,0,.15));
+        img {
+            display: block;
+         }
+
+        // la map
+     > img:first-child {
+            width: min(650px, 100%);
+            height: auto;
+         }
+
+         // les pins (logos)
+        .pin {
+            position: absolute;
+            width: 54px;      // taille du logo
+            height: auto;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+
+            // animation “chute + rebond”
+            animation: drop 900ms cubic-bezier(.2, .9, .2, 1) forwards;
+            animation-fill-mode: forwards;
+            filter: drop-shadow(0 10px 18px rgba(0, 0, 0, .25));
+        }
+
+            // positions sur la carte (à ajuster)
+        .pin-1 { left: 32%; top: 38%; animation-delay: 0.2s; }
+        .pin-2 { left: 55%; top: 52%; animation-delay: 0.55s; }
+        .pin-3 { left: 72%; top: 30%; animation-delay: 0.9s; }
     }
-  }
+
+// Animation: part d’en haut et “tombe” sur sa position
+@keyframes drop {
+  0%   { transform: translate(-50%, -140px) scale(.9); opacity: 0; }
+  60%  { transform: translate(-50%, -50%) scale(1.05); opacity: 1; }
+  80%  { transform: translate(-50%, -60%) scale(.98); }
+  100% { transform: translate(-50%, -50%) scale(1); }
+}
 
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
