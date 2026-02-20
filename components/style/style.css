@@ -17,6 +17,9 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #0f5f5a;
+}
 body ul, body ol {
   list-style: none;
   margin: 0;
@@ -24,19 +27,22 @@ body ul, body ol {
 }
 
 header .header-CTA {
-  background: url(/components/img/FondMarseille.png);
-  background-position: center;
+  position: absolute;
+  background: url(/components/img/citymap2.jpg);
+  background-position: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 230px;
+  width: 100%;
 }
 header .header-CTA #title {
   font-family: "Montserrat", "Poppins", sans-serif;
+  background-color: rgba(240, 255, 255, 0.877);
+  height: 230px;
   font-weight: 800;
   font-size: 4rem;
   letter-spacing: 0.05rem;
   padding: 20px;
-  background-color: rgba(240, 255, 255, 0.411);
   display: flex;
 }
 header .header-CTA #title #food {
@@ -57,4 +63,24 @@ header .header-CTA #title #mark img {
 header .header-CTA #title #mark.show img {
   opacity: 1;
   transform: translateY(0.07em) scale(1);
+}
+header .tampon-ville {
+  content: "";
+  position: relative;
+  height: 200px;
+  width: 310px;
+  transform: translate(70px, 70px);
+}
+
+.top-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 550px;
+}
+.top-main .left-top-main {
+  color: var(--guid-color);
+}
+.top-main .right-top-main img {
+  height: 500px;
+  width: 500px;
 }/*# sourceMappingURL=style.css.map */

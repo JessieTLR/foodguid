@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const foodEl = document.getElementById("food");
   const guidEl = document.getElementById("guid");
-  const dotEl = document.getElementById("dot");
 
   let i = 0;
   const speed = 65;

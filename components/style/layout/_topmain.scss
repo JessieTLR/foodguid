@@ -1,0 +1,16 @@
+.top-main {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    height: 550px;
+
+    .left-top-main{
+        color: var(--guid-color)
+    }
+
+    .right-top-main {
+        img {
+            height: 500px;
+            width: 500px;
+        }
+    }
+}

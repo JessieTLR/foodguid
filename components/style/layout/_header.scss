@@ -2,19 +2,23 @@
 
 header {
   .header-CTA {
-    background: url(/components/img/FondMarseille.png);
-    background-position: center;
+    position: absolute;
+    background: url(/components/img/citymap2.jpg);
+    background-position: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 230px;
+    width: 100%;
+    
 
             #title {
                 font-family: "Montserrat", "Poppins", sans-serif;
+                background-color: rgba(240, 255, 255, 0.877);
+                height: 230px;
                 font-weight: 800;
                 font-size: 4rem;
                 letter-spacing: 0.05rem;
                 padding: 20px;
-                background-color: rgba(240, 255, 255, 0.411);
                 display: flex;
 
                 #food {
@@ -42,5 +46,17 @@ header {
                 }    
             }
         }
+
+    .tampon-ville {
+        content: "";
+        position: relative;
+        height: 200px;
+        width: 310px;
+        transform: translate(70px, 70px);
+       
+
+
+
+    }
 }
 
