@@ -1,20 +1,22 @@
 
 
 header {
+    height: 210px;
   .header-CTA {
-    position: absolute;
     background: url(/components/img/citymap2.jpg);
     background-position: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 230px;
+    
+    height: 210px;
     width: 100%;
     
 
             #title {
+                position: absolute;
                 font-family: "Montserrat", "Poppins", sans-serif;
                 background-color: rgba(240, 255, 255, 0.877);
-                height: 230px;
+                height: 210px;
                 font-weight: 800;
                 font-size: 4rem;
                 letter-spacing: 0.05rem;
@@ -50,9 +52,9 @@ header {
     .tampon-ville {
         content: "";
         position: relative;
-        height: 200px;
-        width: 310px;
-        transform: translate(70px, 70px);
+        height: 100px;
+        width: 150px;
+        transform: translate(145px, -110px);
        
 
 
