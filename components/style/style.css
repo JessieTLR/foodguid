@@ -30,8 +30,8 @@ header {
   height: 210px;
 }
 header .header-CTA {
-  background: url(/components/img/citymap2.jpg);
-  background-position: 100%;
+  background: url(/components/img/header4.jpg);
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 210px;
@@ -99,6 +99,9 @@ header .tampon-ville {
   text-align: left;
   margin: 0 0 16px 0;
 }
+.top-main .left-top-main h2 .halal {
+  font-size: 3rem;
+}
 .top-main .left-top-main p {
   font-family: "Poppins", sans-serif;
   font-size: clamp(1.05rem, 1.2vw, 1.35rem);
@@ -113,7 +116,7 @@ header .tampon-ville {
   padding: 8px 12px;
   border-radius: 999px;
   font-family: "Poppins", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   background: rgba(0, 0, 0, 0.06);
   margin-bottom: 14px;
 }
@@ -156,9 +159,9 @@ header .tampon-ville {
   width: 54px;
   height: auto;
   transform: translate(-50%, -50%);
-  opacity: 0;
-  animation: drop 900ms cubic-bezier(0.2, 0.9, 0.2, 1) forwards;
-  animation-fill-mode: forwards;
+  opacity: 1;
+  animation: drop 900ms cubic-bezier(0.2, 0.9, 0.2, 1);
+  animation-fill-mode: both;
   filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.25));
 }
 .top-main .right-top-main .pin-1 {
